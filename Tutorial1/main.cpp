@@ -1,11 +1,17 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+
 using namespace std;
 
 int main()
 {
+
     string option;
+    string stdnum;
+    string name;
+    string surname;
+    string grades;
     for(;;)
     {
 
@@ -16,6 +22,19 @@ int main()
         case 0:
             // add student
             cout << "function addStudent() called" << endl;
+            cout << "Enter your Student Number(In Capitals): ";
+            cin >> stdnum;
+            cout<<endl;
+             cout << "Enter your Name: ";
+            cin >> name;
+            cout<<endl;
+             cout << "Enter your Surname: ";
+            cin >> surname;
+            cout<<endl;
+             cout << "Enter your Grades(separated by spaces) : ";
+            cin >> grades;
+            cout<<endl;
+            add_student(name,surname,stdnum,grades);
             break;
         case 1:
             //read database
@@ -36,14 +55,12 @@ int main()
 
         }
         if(option == "q") break;
-        //WHTALE008::clear();
+       system("clear");
 
     }
     return 0;
 
 }
-namespace WHTALE008 {
-    void clear(void)
-    {system("clear");
-    }
-}
+
+
+

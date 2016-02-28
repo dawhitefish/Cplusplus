@@ -14,7 +14,7 @@ void read_data(std::string filename);
 
 void save_data(std::string filename);
 
-void get_student(std::string stdnum);
+
 
 void grade_student(std::string stdnum);
 
@@ -25,9 +25,11 @@ typedef struct {
  std::string stdnum;
  std::string classRecord;
 }StudentRecord;
-std::vector<StudentRecord> records;
+ std::vector<StudentRecord> records;
 
 
 void make_student(std::string line, WHTALE008::StudentRecord temp);
+
+StudentRecord get_student(std::string stdnum);
 }
 #endif // DATABASE_H
