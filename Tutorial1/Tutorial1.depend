@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1456672162 source:c:\users\alexander\documents\github\cplusplus\tutorial1\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+
+1456692789 source:c:\users\alexander\documents\github\cplusplus\tutorial1\databasee.cpp
+	"database.h"
+	<cstring>
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+	<iterator>
+	<string>
+
+1456692868 c:\users\alexander\documents\github\cplusplus\tutorial1\database.h
+	<string>
+	<vector>
+
